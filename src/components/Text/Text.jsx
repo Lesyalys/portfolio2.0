@@ -4,6 +4,7 @@ import { SkillsText } from "./SkillsText";
 import { ContactText } from "./ContactText";
 
 export const Text = ({ local }) => {
+    // console.log(local.pathname)
     const path = local.pathname;
     let text;
     switch (path) {
@@ -20,6 +21,7 @@ export const Text = ({ local }) => {
             text = ContactText();
             break;
         default:
+            text = AboutText();
             break;
     }
     return (
