@@ -1,19 +1,18 @@
 export const AboutText = () => {
-    return (
-        <>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance ">
-                Hi, I'm
-                <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 
-                            bg-clip-text text-transparent
-                            ">
-                    Lesya
-                </span>
-            </h1>
-            <span className="hover:text-blue">
-                im beginner frontend develop and
-                UI/UX
-                disigner!
-            </span>
-        </>
-    )
-}
+  return (
+    <>
+      <span className="text-start">
+        <h1>Lesya Valentuychevich</h1>
+        <p>fdfd</p>
+      </span>
+      <span>
+        <h2>dasdas1</h2>
+        <span>
+          Passionate developer with expertise in building modern web
+          applications. Specialized in React, Next.js, and creating beautiful
+          user experiences with cutting-edge technologies.
+        </span>
+      </span>
+    </>
+  );
+};

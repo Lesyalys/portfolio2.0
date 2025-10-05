@@ -7,10 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cm": "gacp --emoji emoji"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
+    "gacp": "^2.9.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router": "^7.9.1",
