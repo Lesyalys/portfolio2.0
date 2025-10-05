@@ -6,7 +6,7 @@ export const Block = ({ local }) => {
       <div className=" h-60 p-2 rounded border-2 border-white overflow-auto">
         <Text local={local} />
       </div>
-      <ul className="flex flex-row gap-4  mt-auto">
+      <ul className="flex flex-row gap-4  mt-1">
         <li className="li-styles">
           <button className="li-button ">
             <span className="line-md--github-loop"></span>
