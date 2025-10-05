@@ -1,6 +1,6 @@
 import { Text } from "../Text/Text"
 
-export const Menu = ({ local }) => {
+export const Menu = () => {
     return (
         <div className="flex flex-row gap-10 pb-10 items-center">
             <img
@@ -10,7 +10,7 @@ export const Menu = ({ local }) => {
                 width="200px"
                 className="rounded-lg border-2 border-blue-400 shadow-lg shadow-blue-500/50 ring-2 ring-blue-300 ring-opacity-50 object-cover"
             />
-            <Text local={local} />
+            <Text />
         </div>
     )
 }

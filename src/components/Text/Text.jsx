@@ -4,7 +4,8 @@ import { SkillsText } from "./SkillsText";
 import { ContactText } from "./ContactText";
 
 export const Text = ({ local }) => {
-    // console.log(local.pathname)
+    console.log(local)
+
     const path = local.pathname;
     let text;
     switch (path) {

@@ -11,38 +11,40 @@ import { Publication } from './components/pages/Publication.jsx';
 import './index.css'
 import App from './App.jsx'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <Menu />
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "skills",
-        element: <Skills />,
-      },
-      {
-        path: "contact",
-        element: <Contact />,
-      },
-      {
-        path: "publication",
-        element: <Publication />
-      }
-    ]
-  },
-]);
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <App />,
+//     children: [
+//       {
+//         index: true,
+//         element: <Menu />
+//       },
+//       {
+//         path: "about",
+//         element: <About />,
+//       },
+//       {
+//         path: "skills",
+//         element: <Skills />,
+//       },
+//       {
+//         path: "contact",
+//         element: <Contact />,
+//       },
+//       {
+//         path: "publication",
+//         element: <Publication />
+//       }
+//     ]
+//   },
+// ]);
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    {/* <RouterProvider router={router} /> */}
+    <App />
   </StrictMode>,
 )
