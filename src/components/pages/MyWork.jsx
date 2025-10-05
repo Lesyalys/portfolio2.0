@@ -4,17 +4,19 @@ export const MyWork = () => {
   const works = [
     {
       title: "Shadulle plane fro aeropor",
+      role: "Developer",
       description:
         "A full-stack e-commerce solution built with Next.js, featuring real-time inventory management and secure payment processing.",
-      tags: ["React", "Next.js", "TypeScript", "Stripe"],
+      tags: ["JavaScript", "React", "NodeJS", "Tailwindcss"],
       link: "https://tablo.nv-aero.ru/",
     },
     {
-      title: "Shadulle plane fro aeropor",
+      title: "Visual novella",
+      role: "Disigner",
       description:
         "A full-stack e-commerce solution built with Next.js, featuring real-time inventory management and secure payment processing.",
-      tags: ["React", "Next.js", "TypeScript", "Stripe"],
-      link: "https://tablo.nv-aero.ru/",
+      tags: ["Figma", "Rive", "Adobe photoshop"],
+      link: "https://web.telegram.org/k/#@gigabidzeBot",
     },
   ];
   return (

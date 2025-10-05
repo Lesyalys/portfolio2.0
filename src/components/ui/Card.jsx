@@ -6,7 +6,7 @@ export const Card = ({ project }) => {
         <li key={index} className="rounded border-2 border-amber-100 p-4">
           <div>
             <h1 className="flex justify-between items-center">
-              {item.title}
+              {item.title} | {item.role}
               <a
                 href={item.link}
                 className="mage--preview-circle-fill"
