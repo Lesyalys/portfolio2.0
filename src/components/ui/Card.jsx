@@ -7,7 +7,7 @@ export const Card = ({ project }) => {
       {project.map((item, index) => (
         <li
           key={index}
-          className="rounded border-2 border-amber-100 p-4 md:mb-0 mb-5 last:mb-0"
+          className="rounded-2xl border-2 border-amber-100 p-4 md:mb-0 mb-5 last:mb-0"
         >
           <div>
             <h1 className="flex justify-between items-center">
@@ -28,7 +28,7 @@ export const Card = ({ project }) => {
               {item.tags.map((tag, tagIndex) => (
                 <li
                   key={tagIndex}
-                  className="border-2 border-amber-200 px-2 py-1 rounded text-sm"
+                  className="border-2 border-amber-200 px-2 py-1 rounded-2xl text-sm"
                 >
                   {tag}
                 </li>

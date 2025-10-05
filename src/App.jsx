@@ -8,7 +8,7 @@ function App() {
   const local = useLocation();
 
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white px-3 pt-3 md:text-[18px] text-[14px]">
+    <div className="flex flex-col min-h-screen bg-[#03060C] text-white px-3 pt-3 md:text-[18px] text-[14px]">
       <Header />
       <main className="flex flex-col md:flex-row m-2">
         <img

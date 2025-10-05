@@ -1,56 +1,32 @@
+import { motion } from "motion/react";
+import { skills } from "../datas/dataSkulls";
+
 export const SkillsText = () => {
-  const skillsDisigner = [
-    {
-      name: "Disigner",
-      tools: ["Figma", "AdobePhotoshop", "Rive"],
-    },
-  ];
-  const skillsTools = [
-    {
-      name: "Tools",
-      tools: ["Git", "GitHub", "Tailwindcss", "Express"],
-    },
-  ];
-  const skillsDeveloper = [
-    {
-      name: "Developer",
-      tools: ["HTML", "CSS", "JavaScript", "NodeJS", "React"],
-    },
-  ];
   return (
     <div className="flex flex-col">
-      {skillsDeveloper.map((items, index) => {
+      {skills.map((items, index) => {
         return (
-          <span key={index} className="flex flex-row gap-2 items-center">
-            <h1>{items.name} :</h1>
+          <span
+            key={index}
+            className={`flex flex-row gap-2 items-center ${items.disign} m-1`}
+          >
+            <h1>
+              <span className={`${items.icon}`}></span>
+              {items.name} :
+            </h1>
             <ul className="flex flex-row gap-2">
               {items.tools.map((itemT, indexT) => {
-                return <li key={indexT}>{itemT}</li>;
-              })}
-            </ul>
-          </span>
-        );
-      })}
-      {skillsDisigner.map((items, index) => {
-        return (
-          <span key={index} className="flex flex-row gap-2 items-center">
-            <h1>{items.name} :</h1>
-            <ul className="flex flex-row gap-2">
-              {items.tools.map((itemT, indexT) => {
-                return <li key={indexT}>{itemT}</li>;
-              })}
-            </ul>
-          </span>
-        );
-      })}
-
-      {skillsTools.map((items, index) => {
-        return (
-          <span key={index} className="flex flex-row gap-2 items-center">
-            <h1>{items.name} :</h1>
-            <ul className="flex flex-row gap-2">
-              {items.tools.map((itemT, indexT) => {
-                return <li key={indexT}>{itemT}</li>;
+                return (
+                  <motion.li
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.8 }}
+                    className={`text-white bg-${items.disign} border-2 p-1 rounded-xl `}
+                    key={indexT}
+                  >
+                    <span className={`${itemT.icon} `}></span>
+                    {itemT.name}
+                  </motion.li>
+                );
               })}
             </ul>
           </span>
