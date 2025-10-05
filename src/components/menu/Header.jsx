@@ -39,8 +39,8 @@ export const Header = () => {
   };
 
   return (
-    <nav className="container mx-auto px-6 py-4 pb-10">
-      <div className="flex items-center justify-between backdrop-opacity-10 border-2  p-2 rounded">
+    <nav className="fixed top-0 left-3 right-3 z-50 backdrop-blur-md">
+      <div className="flex items-center justify-between backdrop-opacity-10   p-2 rounded">
         <span className="text-2xl font-bold gradient-text">Lesya</span>
 
         <motion.button
@@ -54,7 +54,7 @@ export const Header = () => {
             <li>
               <Link
                 to="/myWork"
-                className="hover:text-amber-200 transition-colors"
+                className="hover:text-[#2E2D6F] transition-colors"
               >
                 My works
               </Link>
@@ -62,7 +62,7 @@ export const Header = () => {
             <li>
               <Link
                 to="/contact"
-                className="hover:text-amber-200 transition-colors"
+                className="hover:text-[#2E2D6F] transition-colors"
               >
                 Contact
               </Link>
@@ -70,7 +70,7 @@ export const Header = () => {
             <li>
               <Link
                 to="/about"
-                className="hover:text-amber-200 transition-colors"
+                className="hover:text-[#2E2D6F] transition-colors"
               >
                 About me
               </Link>
@@ -83,7 +83,7 @@ export const Header = () => {
           } md:block absolute  top-full left-0 right-0 mt-2 md:mt-0`}
         >
           <motion.ul
-            className="flex flex-col md:flex-row  gap-4 p-4 md:p-0 bg-black md:bg-transparent border-2 md:border-0 rounded"
+            className=" flex flex-col md:flex-row  gap-4 p-4 md:p-0 bg-[#03060cec] md:bg-transparent  rounded"
             variants={containerVariants}
             initial="closed"
             animate={menuOpen ? "open" : "closed"}
@@ -91,7 +91,7 @@ export const Header = () => {
             <motion.li variants={itemVariants}>
               <Link
                 to="/myWork"
-                className="flex justify-center md:justify-start gap-2 hover:text-amber-200 transition-colors"
+                className="flex justify-center md:justify-start gap-2 hover:text-[#2E2D6F] transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 My works
@@ -100,7 +100,7 @@ export const Header = () => {
             <motion.li variants={itemVariants}>
               <Link
                 to="/contact"
-                className="flex justify-center md:justify-start gap-2 hover:text-amber-200 transition-colors"
+                className="flex justify-center md:justify-start gap-2 hover:text-[#2E2D6F] transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 Contact
@@ -109,7 +109,7 @@ export const Header = () => {
             <motion.li variants={itemVariants}>
               <Link
                 to="/about"
-                className="flex justify-center md:justify-start gap-2 hover:text-amber-200 transition-colors"
+                className="flex justify-center md:justify-start gap-2 hover:text-[#2E2D6F] transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 About me

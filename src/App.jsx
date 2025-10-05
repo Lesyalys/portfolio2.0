@@ -8,9 +8,9 @@ function App() {
   const local = useLocation();
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#03060C] text-white px-3 pt-3 md:text-[18px] text-[14px]">
+    <div className="flex flex-col min-h-screen bg-[#03060C] text-white px-3 pt-3 md:text-[18px] text-[12px]">
       <Header />
-      <main className="flex flex-col md:flex-row m-2">
+      <main className="mt-10 flex flex-col md:flex-row m-2">
         <img
           src="https://sun9-17.userapi.com/s/v1/ig2/lmLwAMOfGB0pQ4XtbtGbtNLNBHzDy7X2sW0roWM_U07WyM8Azj4PllmYJ8wEj4OGfTYrHJp7sCrLynIterNiw_C6.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,832x832&from=bu&cs=832x0"
           alt="image Profile"

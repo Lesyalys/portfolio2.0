@@ -1,13 +1,17 @@
 import { motion } from "motion/react";
 
 export const Card = ({ project }) => {
-  console.log(project);
   return (
     <ul className="md:grid grid-cols-2 gap-5">
       {project.map((item, index) => (
-        <li
+        <motion.li
+          initial={{ scale: 0.8 }}
+          animate={{ scale: 1 }}
+          whileHover={{
+            y: -4,
+          }}
           key={index}
-          className="rounded-2xl border-2 border-amber-100 p-4 md:mb-0 mb-5 last:mb-0"
+          className={`${item.colorBg} hover:shadow-[0_0_20px_rgba(46,45,111,0.3)]  border-transparent cursor-pointer rounded-2xl border-2 ${item.colorBorderHover} transition-colors p-4 md:mb-0 mb-5 last:mb-0`}
         >
           <div>
             <h1 className="flex justify-between items-center">
@@ -17,8 +21,11 @@ export const Card = ({ project }) => {
                 className="mage--preview-circle-fill"
                 target="_blank"
                 rel="noopener noreferrer"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.8, opacity: 0 }}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
               >
                 🔗
               </motion.a>
@@ -26,16 +33,19 @@ export const Card = ({ project }) => {
             <p className="my-2">{item.description}</p>
             <ul className="flex flex-row gap-2 flex-wrap">
               {item.tags.map((tag, tagIndex) => (
-                <li
+                <motion.li
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.8, opacity: 0 }}
                   key={tagIndex}
-                  className="border-2 border-amber-200 px-2 py-1 rounded-2xl text-sm"
+                  className={`border-2 ${item.colorBorder} px-2 py-1 rounded-2xl text-sm`}
                 >
                   {tag}
-                </li>
+                </motion.li>
               ))}
             </ul>
           </div>
-        </li>
+        </motion.li>
       ))}
     </ul>
   );

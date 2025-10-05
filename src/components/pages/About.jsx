@@ -1,5 +1,13 @@
+import { motion } from "motion/react";
 export const About = () => {
-    return (
-        < div > about me....</div >
-    )
-}
+  return (
+    <motion.div
+      initial={{ scale: 0.8, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      exit={{ scale: 0.8, opacity: 0 }}
+    >
+      {" "}
+      about me....
+    </motion.div>
+  );
+};
