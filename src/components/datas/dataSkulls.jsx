@@ -1,4 +1,4 @@
-import { color } from "motion/react";
+// import { color } from "motion/react";
 
 export const skills = [
   {
