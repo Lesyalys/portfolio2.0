@@ -18,7 +18,7 @@ export const Card = ({ project }) => {
               {item.title} | {item.role}
               <motion.a
                 href={item.link}
-                className="mage--preview-circle-fill"
+                className="line-md--external-link"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ scale: 0.8, opacity: 0 }}

@@ -39,7 +39,7 @@ export const Header = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-3 right-3 z-50 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 px-2 z-50 backdrop-blur-md">
       <div className="flex items-center justify-between backdrop-opacity-10   p-2 rounded">
         <span className="text-2xl font-bold gradient-text">Lesya</span>
 
