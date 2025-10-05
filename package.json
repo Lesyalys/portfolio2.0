@@ -14,8 +14,8 @@
     "@tailwindcss/vite": "^4.1.13",
     "gacp": "^2.9.0",
     "motion": "^12.23.22",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-router": "^7.9.1",
     "tailwindcss": "^4.1.13"
   },

@@ -7,7 +7,7 @@ import { MyWorkText } from "./MyWorkText";
 export const Text = ({ local }) => {
   //   console.log(local);
 
-  const path = local.pathname;
+  const path = local.pathname || local;
   let text;
   switch (path) {
     case "/about":

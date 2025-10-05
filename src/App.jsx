@@ -5,7 +5,7 @@ import { Footer } from "./components/menu/Footer";
 import { Block } from "./components/ui/blobk";
 
 function App() {
-  const local = useLocation();
+  const location = useLocation();
 
   return (
     <div className="flex flex-col min-h-screen bg-[#03060C] text-white px-3 pt-3 md:text-[18px] text-[12px]">
@@ -16,7 +16,7 @@ function App() {
           alt="image Profile"
           className="rounded-full border-3 self-center md:self-start m-5 w-26 h-26 md:w-35 md:h-35"
         />
-        <Block local={local} />
+        <Block local={location} />
       </main>
       <Outlet />
 

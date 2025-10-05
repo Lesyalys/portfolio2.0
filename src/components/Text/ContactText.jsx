@@ -1,13 +1,23 @@
 import { motion } from "motion/react";
 export const ContactText = () => {
   return (
-    <motion.h1
+    <motion.div
       initial={{ scale: 0.8, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0.8, opacity: 0 }}
-      className="text-5xl md:text-7xl font-bold mb-6 text-balance"
+      className=" font-bold mb-6 text-balance"
     >
-      You can conect with me
-    </motion.h1>
+      <h1>You can conect with me</h1>
+      <ul className="flex flex-row gap-5 mt-10 [&>li]:border-[#6f2d66] [&>li]:rounded">
+        <li className="border-2">
+          <p>mail</p>
+          <a type="mialto">nya.olesya@bk.ru</a>
+        </li>
+        <li className="border-2">
+          <p>telegramm</p>
+          <a type="mialto">@ctrlctrv</a>
+        </li>
+      </ul>
+    </motion.div>
   );
 };
