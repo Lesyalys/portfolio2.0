@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
 import { skills } from "../datas/dataSkulls";
 
-export const SkillsText = () => {
+export const SkillsText = ({ local }) => {
   return (
-    <div className="flex flex-col">
+    <div key={local.key}
+      className="flex flex-col">
       {skills.map((items, index) => {
         return (
           <span
@@ -25,10 +26,17 @@ export const SkillsText = () => {
                   <motion.li
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
-                    exit={{ scale: 0.8, opacity: 0 }}
-                    whileHover={{ scale: 1.1 }}
+                    // exit={{ scale: 0.8, opacity: 0 }}
+                    // whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.8 }}
-                    className={`flex ${itemT.color}  gap-1 items-center cursor-pointer text-white ${items.color} border-2 ${items.borderColor} hover:drop-shadow-2xl hover:${items.shadowColor} p-1 rounded-xl `}
+                    drag="x"
+                    dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+                    dragTransition={{ bounceStiffness: 500, bounceDamping: 15 }}
+                    dragElastic={0.2}
+                    whileDrag={{ cursor: "grabbing" }}
+
+
+                    className={`bg-[#03060C] backdrop-blur-md flex ${itemT.color}  gap-1 items-center cursor-pointer text-white ${items.color} border-2 ${items.borderColor} hover:drop-shadow-2xl hover:${items.shadowColor} p-1 rounded-xl `}
                     key={indexT}
                   >
                     <span className={`${itemT.icon} `}></span>

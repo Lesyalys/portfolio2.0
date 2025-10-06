@@ -3,20 +3,43 @@ import { Menu } from "./components/menu/Menu";
 import { Outlet, useLocation } from "react-router";
 import { Footer } from "./components/menu/Footer";
 import { Block } from "./components/ui/blobk";
+import { motion } from "motion/react";
+import { Image } from "./components/ui/Image";
 
+const routeColors = {
+  "/about": {
+    link: "hover:text-purple-500 ",
+    bg: "bg-[#03060C]",
+    gradient: "from-purple-500 to-pink-500",
+    button1: "text-gray-600 border-gray-600 hover:text-purple-500 hover:border-purple-500",
+    button2: "text-gray-600 border-gray-600 hover:text-pink-200 hover:border-pink-200"
+  },
+  "/contact": {
+    link: "hover:text-pink-400",
+    bg: "bg-[#200517]",
+    gradient: "from-[#6f2d66] to-pink-400",
+    button1: "text-gray-600 border-gray-600 hover:text-[#9D174D] hover:border-pink-500",
+    button2: "text-gray-600 border-gray-600 hover:text-[#E11D48] hover:border-[#E11D48]"
+  },
+  "/myWork": {
+    link: "hover:text-blue-400",
+    bg: "bg-[#1E0520]",
+    gradient: "from-blue-500 to-purple-500",
+    button1: "text-gray-600 border-gray-600 hover:text-blue-500 hover:border-blue-500",
+    button2: "text-gray-600 border-gray-600 hover:text-[#F59E0B] hover:border-[#F59E0B]"
+  }
+}
 function App() {
   const location = useLocation();
+  const path = location.pathname || "/"
+  const colors = routeColors[path];
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#03060C] text-white px-3 pt-3 md:text-[18px] text-[12px]">
+    <div className={`flex flex-col min-h-screen bg-[#03060C] transition-colors text-white px-3 pt-3 md:text-[18px] text-[12px]`}>
       <Header />
       <main className="mt-10 flex flex-col md:flex-row m-2">
-        <img
-          src="https://sun9-17.userapi.com/s/v1/ig2/lmLwAMOfGB0pQ4XtbtGbtNLNBHzDy7X2sW0roWM_U07WyM8Azj4PllmYJ8wEj4OGfTYrHJp7sCrLynIterNiw_C6.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,832x832&from=bu&cs=832x0"
-          alt="image Profile"
-          className="rounded-full border-3 self-center md:self-start m-5 w-26 h-26 md:w-35 md:h-35"
-        />
-        <Block local={location} />
+        <Image local={location} colors={colors} />
+        <Block local={location} colors={colors} />
       </main>
       <Outlet />
 

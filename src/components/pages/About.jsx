@@ -6,8 +6,14 @@ export const About = () => {
       animate={{ scale: 1, opacity: 1 }}
       exit={{ scale: 0.8, opacity: 0 }}
     >
-      {" "}
-      about me....
+      {/* <span>
+        <h2>Sertificats</h2>
+        <ul>
+          <li>
+            <span className="border-2">fsfe</span>
+          </li>
+        </ul>
+      </span> */}
     </motion.div>
   );
 };
