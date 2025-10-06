@@ -6,22 +6,22 @@ export const Image = ({ local, colors }) => {
         switch (local.pathname) {
             case "/about":
                 return {
-                    src: "./public/me.png",
+                    src: "./3dAi.png",
                     alt: "About Profile"
                 };
             case "/contact":
                 return {
-                    src: "./public/me.png",
+                    src: "./3dAi.png",
                     alt: "Contact Profile"
                 };
             case "/myWork":
                 return {
-                    src: "./public/me.png",
+                    src: "./3dAi.png",
                     alt: "My Work Profile"
                 };
             default:
                 return {
-                    src: "./public/me.png",
+                    src: "./3dAi.png",
                     alt: "Default Profile"
                 };
         }
@@ -45,7 +45,7 @@ export const Image = ({ local, colors }) => {
                             Nisnevartovsk
                         </a>
                     </li>
-                    <li>Msc +2</li>
+                    <li>MSK +2</li>
                 </ul>
             </span>
         </div>
