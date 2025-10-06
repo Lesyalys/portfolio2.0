@@ -15,7 +15,7 @@ import { MyWork } from "./components/pages/MyWork.jsx";
 const router = createBrowserRouter([
 
   {
-    path: "/",
+    path: "portfolio2.0/",
     element: <App />,
     children: [
       {
