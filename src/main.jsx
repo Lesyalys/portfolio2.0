@@ -14,11 +14,13 @@ import { MyWork } from "./components/pages/MyWork.jsx";
 import { path } from "motion/react-client";
 import { Conf } from "./components/pages/Comf.jsx";
 
+
 const router = createBrowserRouter([
 
   {
     path: "/",
     element: <App />,
+    basename: '/portfolio2.0',
     children: [
       {
         index: true,
