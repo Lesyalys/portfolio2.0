@@ -1,5 +1,5 @@
 export const Publication = () => {
     return (
-        <div>Publication</div>
+        <div>fds</div>
     )
 }
