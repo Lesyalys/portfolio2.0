@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
+import { Link } from "react-router";
 export const AboutText = ({ local }) => {
     return (
         <>
             <motion.span
-                key={local.key}
+                key={local}
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
@@ -44,14 +45,13 @@ export const AboutText = ({ local }) => {
                         <p className="flex items-center gap-1">
                             <span className="text-purple-400 ic--round-people"></span>I
                             participate in
-                            <a
-                                target="_blank"
-                                href="https://nvsu.ru/"
+                            <Link
+                                to="/conferences"
                                 className="
                 hover:text-purple-400 transition-colors border-2 border-purple-400 rounded-2xl p-1"
                             >
                                 conferences
-                            </a>
+                            </Link>
                             meetings
                         </p>
                     </li>

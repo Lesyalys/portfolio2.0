@@ -3,7 +3,7 @@ import { skills } from "../datas/dataSkulls";
 
 export const SkillsText = ({ local }) => {
   return (
-    <div key={local.key}
+    <div key={local?.key}
       className="flex flex-col">
       {skills.map((items, index) => {
         return (

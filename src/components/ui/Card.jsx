@@ -11,13 +11,13 @@ export const Card = ({ project }) => {
             y: -4,
           }}
           key={index}
-          className={`${item.colorBg} hover:shadow-[0_0_20px_rgba(46,45,111,0.3)]  border-transparent cursor-pointer rounded-2xl border-2 ${item.colorBorderHover} transition-colors p-4 md:mb-0 mb-5 last:mb-0`}
+          className={`${item?.colorBg} hover:shadow-[0_0_20px_rgba(46,45,111,0.3)]  border-transparent cursor-pointer rounded-2xl border-2 ${item?.colorBorderHover} transition-colors p-4 md:mb-0 mb-5 last:mb-0`}
         >
           <div>
             <h1 className="flex justify-between items-center">
               {item.title} | {item.role}
               <motion.a
-                href={item.link}
+                href={item?.link}
                 className="line-md--external-link"
                 target="_blank"
                 rel="noopener noreferrer"

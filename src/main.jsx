@@ -11,11 +11,13 @@ import { Publication } from "./components/pages/Publication.jsx";
 import "./index.css";
 import App from "./App.jsx";
 import { MyWork } from "./components/pages/MyWork.jsx";
+import { path } from "motion/react-client";
+import { Conf } from "./components/pages/Comf.jsx";
 
 const router = createBrowserRouter([
 
   {
-    path: "portfolio2.0/",
+    path: "/",
     element: <App />,
     children: [
       {
@@ -42,6 +44,10 @@ const router = createBrowserRouter([
         path: "myWork",
         element: <MyWork />,
       },
+      {
+        path: "conferences",
+        element: <Conf />
+      }
     ],
   },
 ]);

@@ -7,7 +7,7 @@ export const Contact = () => {
       exit={{ scale: 0.8, opacity: 0 }}
       className="flex md:flex-row flex-col gap-5"
     >
-      <form className="border-l-2 border-[#6f2d66] w-full  h-auto p-6 rounded-2xl bg-linear-to-r from-[#03060C] to-[#6f2d66] space-y-4">
+      {/* <form className="border-l-2 border-[#6f2d66] w-full  h-auto p-6 rounded-2xl bg-linear-to-r from-[#03060C] to-[#6f2d66] space-y-4">
         <div>
           <h1 className="font-semibold mb-2 text-gray-100">Name</h1>
           <input
@@ -40,7 +40,7 @@ export const Contact = () => {
         >
           Send Message
         </button>
-      </form>
+      </form> */}
     </motion.div>
   );
 };

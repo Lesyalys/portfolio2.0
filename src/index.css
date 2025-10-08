@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @plugin "@iconify/tailwind4" {
   scale: 1.2;
 }
@@ -6,6 +7,7 @@
 .li-styles {
   @apply rounded-xl p-1;
 }
+
 .li-button {
   @apply flex justify-center gap-2;
 }
@@ -37,6 +39,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .material-symbols-light--work-outline {
   display: inline-block;
   width: 24px;
@@ -50,6 +53,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .line-md--external-link {
   display: inline-block;
   width: 24px;
@@ -63,6 +67,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .line-md--menu {
   display: inline-block;
   width: 24px;
@@ -76,6 +81,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .solar--code-bold {
   display: inline-block;
   width: 24px;
@@ -89,6 +95,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .hugeicons--web-design-02 {
   display: inline-block;
   width: 24px;
@@ -102,6 +109,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .fluent--window-dev-tools-20-filled {
   display: inline-block;
   width: 20px;
@@ -130,6 +138,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .flowbite--html-solid {
   display: inline-block;
   width: 24px;
@@ -143,6 +152,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .cib--js {
   display: inline-block;
   width: 24px;
@@ -156,6 +166,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .material-icon-theme--nodejs {
   display: inline-block;
   width: 24px;
@@ -164,6 +175,7 @@
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%2371d200' d='M16 20.003v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2v-2h4v-2h-4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2v2Z'/%3E%3Cpath fill='%2371d200' d='m16 3.003l-12 7v14l4 2h6v-13.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v11.5H8l-2-1.034V11.15l10-5.833l10 5.833v11.703l-10 5.833l-1.745-1.022L13 29.253l3 1.75l12-7v-14Z'/%3E%3C/svg%3E");
 }
+
 .material-icon-theme--nodejs {
   display: inline-block;
   width: 24px;
@@ -172,6 +184,7 @@
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23fff' d='M16 20.003v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2v-2h4v-2h-4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2v2Z'/%3E%3Cpath fill='%23fff' d='m16 3.003l-12 7v14l4 2h6v-13.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v11.5H8l-2-1.034V11.15l10-5.833l10 5.833v11.703l-10 5.833l-1.745-1.022L13 29.253l3 1.75l12-7v-14Z'/%3E%3C/svg%3E");
 }
+
 .proicons--nodejs {
   display: inline-block;
   width: 24px;
@@ -185,6 +198,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .mdi--react {
   display: inline-block;
   width: 24px;
@@ -198,6 +212,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .akar-icons--figma-fill {
   display: inline-block;
   width: 24px;
@@ -211,6 +226,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .mage--photoshop {
   display: inline-block;
   width: 24px;
@@ -224,6 +240,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .simple-icons--rive {
   display: inline-block;
   width: 24px;
@@ -237,6 +254,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .hugeicons--git-fork {
   display: inline-block;
   width: 24px;
@@ -250,6 +268,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .mdi--github {
   display: inline-block;
   width: 24px;
@@ -263,6 +282,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .lineicons--tailwindcss {
   display: inline-block;
   width: 24px;
@@ -276,6 +296,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .simple-icons--express {
   display: inline-block;
   width: 24px;
@@ -289,6 +310,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .ph--student {
   display: inline-block;
   width: 24px;
@@ -302,6 +324,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .ic--round-people {
   display: inline-block;
   width: 24px;
@@ -315,6 +338,7 @@
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+
 .flowbite--school-outline {
   display: inline-block;
   width: 24px;
@@ -327,4 +351,22 @@
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
+}
+
+.line-md--telegram {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23f7f8ff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='20' stroke-dashoffset='20' d='M21 5l-2.5 15M21 5l-12 8.5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.4s' values='20;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='24' stroke-dashoffset='24' d='M21 5l-19 7.5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.4s' values='24;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='14' stroke-dashoffset='14' d='M18.5 20l-9.5 -6.5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.4s' dur='0.3s' values='14;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='10' stroke-dashoffset='10' d='M2 12.5l7 1'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.4s' dur='0.3s' values='10;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='8' stroke-dashoffset='8' d='M12 16l-3 3M9 13.5l0 5.5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.7s' dur='0.3s' values='8;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.material-symbols--mail-outline {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23f7f8ff' d='M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z'/%3E%3C/svg%3E");
 }
