@@ -5,7 +5,7 @@ export const skills = [
     icon: "solar--code-bold",
     name: "Developer",
     color: "text-[#6d65fe]",
-    bgColor: "bg-[#6d65fe]",
+    bgColor: "bg-[#0079ce]",
     borderColor: "border-[#6d65fe]",
     shadowColor: "drop-shadow-[#6d65fe]",
     tools: [
@@ -42,7 +42,7 @@ export const skills = [
     icon: "hugeicons--web-design-02",
     name: "Designer",
     color: "text-[#00aab5]",
-    bgColor: "bg-[#00aab5]",
+    bgColor: "bg-[#0079ce]",
     borderColor: "border-[#00aab5]",
     shadowColor: "drop-shadow-[#00aab5]",
     tools: [
