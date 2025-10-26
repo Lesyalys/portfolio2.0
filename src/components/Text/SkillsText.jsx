@@ -1,29 +1,53 @@
-export const SkillsText = () => {
-    return (
-        <div className="flex flex-col">
-            <span className="flex flex-row gap-5">
-                <h2 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-                    My stack:
-                </h2>
-                <ul className="flex flex-row [&>li]:flex [&>li]:items-center gap-2 ">
-                    <li>React</li>
-                    <li>Figma / AdobePhotoshop</li>
-                    <li>Js / Ts</li>
-                    <li>NodeJS</li>
-                    <li>Express / Fastify</li>
-                </ul>
-            </span>
-            <span className="flex flex-row gap-5">
-                <h2 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-                    Other:
-                </h2>
-                <ul className="flex flex-row [&>li]:flex  [&>li]:items-center gap-2">
-                    <li>Git / GitHub</li>
-                    <li></li>
-                    <li>NodeJS</li>
-                    <li>Express/Fastify</li>
-                </ul>
-            </span>
-        </div>
-    )
-}
+import { motion } from "motion/react";
+import { skills } from "../datas/dataSkulls";
+
+export const SkillsText = ({ local }) => {
+  return (
+    <div key={local?.key}
+      className="flex flex-col">
+      {skills.map((items, index) => {
+        return (
+          <span
+            key={index}
+            className={`flex flex-col gap-2 font-bold items-start ${items.color} m-1`}
+          >
+            <motion.h1
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              className="flex items-center gap-2 "
+            >
+              <span className={`${items.icon}`}></span>
+              {items.name}
+            </motion.h1>
+            <ul className="flex flex-row gap-2">
+              {items.tools.map((itemT, indexT) => {
+                return (
+                  <motion.li
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    // exit={{ scale: 0.8, opacity: 0 }}
+                    // whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.8 }}
+                    drag="x"
+                    dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
+                    dragTransition={{ bounceStiffness: 500, bounceDamping: 15 }}
+                    dragElastic={0.2}
+                    whileDrag={{ cursor: "grabbing" }}
+
+
+                    className={`bg-[#03060C] backdrop-blur-md flex ${itemT.color}  gap-1 items-center cursor-pointer text-white ${items.color} border-2 ${items.borderColor} hover:drop-shadow-2xl hover:${items.shadowColor} p-1 rounded-xl `}
+                    key={indexT}
+                  >
+                    <span className={`${itemT.icon} `}></span>
+                    {itemT.name}
+                  </motion.li>
+                );
+              })}
+            </ul>
+          </span>
+        );
+      })}
+    </div>
+  );
+};
